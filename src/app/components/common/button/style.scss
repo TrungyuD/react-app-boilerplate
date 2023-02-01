@@ -1,0 +1,36 @@
+.btn-custom {
+    width: 273px !important;
+    height: 58px !important;
+    &.ant-btn {
+      background: #5833eb;
+      max-width: 100%;
+      font-size: 16px !important;
+      border-radius: 28px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      &:hover,
+      &:focus,
+      &:visited,
+      &:target,
+      &:focus-visible,
+      &:focus-within,
+      &:active {
+        background: #5833eb !important;
+        border-color: #5833eb !important;
+      }
+    }
+  }
+  
+  .lg-color {
+    background: linear-gradient(
+      131.66deg,
+      #f649b8 8.75%,
+      #8b66ff 100%
+    ) !important;
+    &:hover {
+      opacity: 0.5 !important;
+    }
+  }
+  

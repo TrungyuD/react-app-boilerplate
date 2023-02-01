@@ -2,9 +2,14 @@ import { Web3ReactProvider } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
 import { Harmony } from '@harmony-js/core';
 import AppContainer from './app';
-import Web3 from 'web3';
+import { Provider } from 'react-redux';
+import store from 'store';
+import 'antd/dist/reset.css';
+import 'styles/common.scss';
+import 'styles/override.scss';
+
 function getLibrary(provider: any): Web3Provider | Harmony {
-  var library: Web3Provider | Harmony;  
+  var library: Web3Provider | Harmony;
 
   if (provider?.chainType === 'hmy') {
     library = provider.blockchain;
@@ -17,10 +22,12 @@ function getLibrary(provider: any): Web3Provider | Harmony {
 }
 const App = () => {
   return (
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <AppContainer />
-    </Web3ReactProvider>
-  )
-}
+    <Provider store={store}>
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <AppContainer />
+      </Web3ReactProvider>
+    </Provider>
+  );
+};
 
-export default App
+export default App;

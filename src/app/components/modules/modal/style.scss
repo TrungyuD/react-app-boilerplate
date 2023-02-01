@@ -1,0 +1,55 @@
+.modal-custom {
+    .ant-modal-content {
+      border-radius: 20px;
+    }
+  
+    .ant-modal-body {
+      padding: 28px 32px;
+      border-radius: 20px;
+    }
+  
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      position: relative;
+  
+      .close-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-image: url('../../assets/images/icons/close.svg');
+        &:focus{
+          background-image: url('../../assets/images/icons/close-focus-ic.svg');
+        }
+        &:hover {
+          background-image: url('../../assets/images/icons/close-focus-ic.svg');
+        }
+      }
+    }
+  
+    .modal-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 150%;
+      color: #000000;
+      text-align: left;
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  
+    img {
+      cursor: pointer;
+    }
+  }
+  
