@@ -1,11 +1,13 @@
 
 import { Helmet } from 'react-helmet-async';
 import { BrowserRouter} from 'react-router-dom';
-
 import Layout from './layout/container';
+
 import RootRoute from './layout/router';
 
 export default function AppContainer() {
+  // handle web3
+  
   return (
     <BrowserRouter>
       <Helmet

@@ -31,7 +31,6 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "ethers": "5.7.2",
     "fontfaceobserver": "2.3.0",
-    "husky": "8.0.1",
     "i18next": "21.9.2",
     "i18next-browser-languagedetector": "6.1.5",
     "i18next-scanner": "4.0.0",
@@ -81,8 +80,6 @@
     "lint": "yarn run eslint src",
     "lint:fix": "yarn run eslint --fix src",
     "lint:css": "stylelint src/**/*.css",
-    "generate": "plop --plopfile internals/generators/plopfile.ts",
-    "cleanAndSetup": "ts-node ./internals/scripts/clean.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js"
   },
@@ -129,5 +126,8 @@
         "statements": 90
       }
     }
+  },
+  "devDependencies": {
+    "husky": "8.0.3"
   }
 }
